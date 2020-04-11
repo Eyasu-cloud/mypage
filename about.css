@@ -1,0 +1,49 @@
+$high-contrast: true;
+$background-color: #fff;
+$background-high-contrast-color: #000;
+$text-color: #000;
+$text-high-contrast-color: #fff;
+
+
+body {
+@if high-contrast == true {
+    background-color: $background-high-contrast-color;
+} else {
+    background-color: $background-color;
+}
+
+}
+.text {
+    @if high-contrast == true {
+        color: $text-color;
+    } else {
+        color: $text-high-contrast-color;
+    }
+}
+
+nav {
+   padding-top: 10px;
+   padding-right: 10px;
+   border: 1px solid black;
+   text-align: right;
+   position: relative;
+   height: 110px;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 0px 30px;
+}
+
+nav > li {
+    display: inline-block;
+    padding: 0px 10px;
+    margin-right: 20px;
+    font-weight: bolder;
+    line-height: 55px;
+    font-size: 30px;
+}
+
