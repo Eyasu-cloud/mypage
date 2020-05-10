@@ -1,0 +1,67 @@
+$icon-color: rgb(21, 140, 180);
+$bg-color: #16c4c4;
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $bg-color;
+    margin:0px;
+    padding:0px;
+}
+@mixin flexRow($direction,$item) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $item;
+    margin: 0% 10%;
+    border: 1px solid;
+}
+.logo, .menu {
+  display: flex;
+  justify-content: space-between;
+}
+#main-container{
+@include flexRow(column,center);
+}
+#home-container{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#home-container,
+#about-container,
+#skills-container,
+#resume-container,
+#portfolio-container,
+#contact-container {
+  width:100%;
+  display: flex;
+  margin: 50px;
+  border: 1px solid;
+}
+#logo > img {
+    width: 100px;
+    height: 100px;
+}
+nav{
+    background-color: dimgray;
+}
+.nav > ul li{
+    display: inline;
+}
+ul li{
+    list-style: none;
+}
+.fas, .fab{
+    padding-right: 20px;
+    color: $icon-color;
+}
+#about-container{
+    float:left;
+}
+.about-image {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    margin-right: 50px;
+}
