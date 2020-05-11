@@ -1,0 +1,96 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #16c4c4;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo, .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0% 10%;
+  border: 1px solid;
+}
+
+#home-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#home-container,
+#about-container,
+#skills-container,
+#resume-container,
+#portfolio-container,
+#contact-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px;
+  border: 1px solid;
+}
+
+#logo > img {
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  background-color: dimgray;
+}
+
+.nav > ul li {
+  display: inline;
+}
+
+ul li {
+  list-style: none;
+}
+
+.fas, .fab {
+  padding-right: 20px;
+  color: #158cb4;
+}
+
+#about-container {
+  float: left;
+}
+
+.about-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  height: 400px;
+  margin-right: 50px;
+}
+/*# sourceMappingURL=about.css.map */
